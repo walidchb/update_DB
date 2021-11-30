@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Student.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul type="none">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Mise à jour</a></li>
+          <li><a href="#">Etat</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="pricpale_div_student">
+      
+
+      <form id="search_student">
+        <div class="info_student">
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="Matricule"
+            aria-describedby="emailHelp"
+            required
+          />
+        </div>
+        <button id="search_student_button" type="button">Search</button>
+      </form>
+
+     
+
+      <form class="form_student_suprimer_hidden">
+        <div class="info_student">
+          <label for="exampleInputEmail1"
+            >Nom <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="walid"
+            name="name_suprimer"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Prénom <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="chebbab" name="prenom_suprimer" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Section <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="ISILB" name="section_suprimer" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Groupe <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="2" name="groupe_suprimer" required />
+          <label class="wrong" for="">1</label>
+        </div>
+    
+        <div class="ajt_anl">
+          <button id="AJT_btn" class="submit" type="button">Suprimer</button>
+    
+          <button id="ANL_btn" class="submit" type="button">Annuler</button>
+        </div>
+      </form>
+    </div>
+    </div>
+</div>
+
+    <script src="Sign-up.js"></script>
+  </body>
+</html>
+
+

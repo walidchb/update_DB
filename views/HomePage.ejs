@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="pricpale_div">
+      <form id="form">
+        <h2 class="wa invalid">invalid Username or Password</h2>
+        <div class="email">
+          <label for="exampleInputEmail1"
+            >User name <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="user_name"
+            aria-describedby="emailHelp"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="password">
+          <label for="exampleInputPassword1"
+            >Password <span class="oblg">* </span> <span>:</span></label
+          >
+          <input
+            id="mdp_value"
+            type="password"
+            placeholder="*********"
+            required
+          />
+          <label class="wrong" for="">1</label>
+        </div>
+
+        <button id="in_btn" class="submit" type="button">Log in</button>
+      </form>
+    </div>
+
+    <footer>
+      <ul type="none">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li class="p1"><a href="#">Contact Us</a></li>
+      </ul>
+    </footer>
+    <script src="Home.js"></script>
+  </body>
+</html>

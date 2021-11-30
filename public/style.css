@@ -1,0 +1,192 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  background-image: linear-gradient(to left , blue , red);
+  justify-content: center;
+  align-items: center;
+
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  
+}
+header ul a {
+  font-weight: bold;
+  color: white;
+  margin: 0em 2em;
+  text-decoration: none;
+}
+
+header ul li :hover {
+  padding: 3vh 2em;
+color: brown;
+background-color: white;
+}
+
+
+#pricpale_div{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/USTHB.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#form{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40em;
+  height: 30em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2em;
+}
+
+.wrong_info {
+  border-radius: 1em;
+  display:1;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  border: 0.1em red solid ;
+  background-color: rgb(247, 160, 160);
+  color: red;
+}
+.invalid{
+  display: none;
+}
+
+
+.email , .password , .submit{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0em ;
+}
+
+.email label , .password label {
+  font-size: 1.4em;
+
+}
+
+.email label .oblg , .password label .oblg {
+  color: red;
+}
+
+.email input , .password input {
+  font-size: 1em;
+  border-radius: 2em;
+  margin: 1em 0em 0.3em 0em;
+  padding: 0em 1em;
+  width: 25em;
+  height: 3em;
+}
+
+.ajt_anl{
+  display: flex;
+}
+
+.ajt_anl button{
+  margin: 0em 1em;
+}
+
+
+.wrong {
+  display: none;
+}
+
+.submit{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+ color: white;
+ background-image: linear-gradient(to left , red , blue); 
+ font-size: 1.5em ;
+ padding: 0.5em 3em;
+ border-radius: 2em ;
+ 
+}
+
+.submit:hover{
+  transition: 1s;
+  font-size: 1.4em ;
+  padding: 0.4em 2.5em;
+  color: white;
+  background-image: linear-gradient(to left , blue , red);
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  background-image: linear-gradient(to left , blue , red);
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  
+}
+footer ul a {
+  font-weight: bold;
+  color: white;
+  margin: 0em 2em;
+  text-decoration: none;
+}
+
+footer ul li :hover {
+  padding: 3vh 2em;
+color: brown;
+background-color: white;
+}
+
+
+
+/*******************************   work  **********************/
+
+main{
+  height: 90vh;
+  background-image: url("/USTHB.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div_btn{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn{
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 14em;
+  height: 4em;
+  border-radius: 25px;
+  margin: 0em 2em;
+  background-image: linear-gradient(to left , blue , red);
+}
+
+.btn:hover {
+  background-image: linear-gradient(to left , red , blue);
+  font-size: 1.5em;
+  transition: 1s;
+}
+
+
+

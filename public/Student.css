@@ -1,0 +1,124 @@
+#pricpale_div_student{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/USTHB.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.action_wanna_do{
+    display: flex;
+}
+
+.action_wanna_do button {
+    margin: 0em 1em 0.1em 1em;
+}
+
+
+#search_student{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_student_button{
+ margin: 0em 1em;
+ height: 2.5em;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ border: none;
+ color: white;
+ background-image: linear-gradient(to left , red , blue); 
+ font-size: 1.5em ;
+ padding: 0em 3em;
+ border-radius: 2em ;
+}
+
+.form_student_ajouter{
+  margin: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.form_student_ajouter_hidden{
+    display: none;
+}
+
+.form_student_modifier{
+    margin: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2em;
+    padding: 1em;
+  }
+  
+  .form_student_modifier_hidden{
+      display: none;
+  }
+
+  .form_student_suprimer{
+    margin: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2em;
+    padding: 1em;
+  }
+  
+  .form_student_suprimer_hidden{
+      display: none;
+  }
+
+
+
+
+
+
+.info_student{
+    display: flex;
+    flex-direction: row;
+    margin: 0em 0em ;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info_student label{
+    font-size: 1.4em;
+  
+  }
+  
+  .info_student label .oblg {
+    color: red;
+  }
+  
+  .info_student input {
+    font-size: 1em;
+    border-radius: 2em;
+    margin: 1em 0em 0.3em 1em;
+    padding: 0em 1em;
+    width: 25em;
+    height: 3em;
+  }
+
+  .datashow_hidden{
+    display: none;
+  }
+
+  .datashow{
+    margin:4em 0em;
+    display: 1;
+  }
+  
+

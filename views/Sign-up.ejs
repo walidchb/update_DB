@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Student.css" />
+  </head>
+  <body>
+    <!-- <header>
+      <nav>
+        <ul type="none">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Mise à jour</a></li>
+          <li><a href="#">Etat</a></li>
+        </ul>
+      </nav>
+    </header> -->
+
+    <div id="pricpale_div_student">
+      <div class="action_wanna_do">
+        <button id="AJT_action_btn" class="submit" type="button">
+          Ajouter module
+        </button>
+        <button id="EDT_action_btn" class="submit" type="button">
+          Modifier module
+        </button>
+        <button id="DLT_action_btn" class="submit" type="button">
+          Suprimer module
+          
+        </button>
+      </div>
+      
+      <!-- <% arrData.forEach(item =>{ 
+       if(item.nom == "walid" ) { %>
+      <div class="datashow_hidden">
+        <h1 >matricule : <%= item.matricule  %> </h1>
+        <h1 >nom : <%= item.nom  %> </h1>
+        <h1 >prenom : <%= item.prenom  %> </h1>
+        <h1 >section : <%= item.section  %> </h1>
+        <h1 >Groupe : <%= item.groupe  %> </h1>
+      </div>
+      
+      <% }}); %> -->
+      <form id="search_student">
+        <div class="info_student">
+          <input
+            class="data_input"
+            type="text"
+            placeholder="Code_Module"
+            aria-describedby="emailHelp"
+            required
+          />
+        </div>
+        <button  class="submit search_student_button" type="button">Search</button>
+      </form>
+
+      <form class="form_student_ajouter" method="post" action="/new-meeting">
+        <div class="info_student">
+          <label for="exampleInputEmail1"
+            >Code module <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="ALG2"
+            name="matricule"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputEmail1"
+            >Libellé module <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="Genie logiciel"
+            name="nom"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Coef <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="2" name="prenom"
+          required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Code enseignant <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="CW0002" name="section"
+          required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <!-- <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Groupe <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="2" name="groupe" required />
+          <label class="wrong" for="">1</label>
+        </div> -->
+
+        <button id="AJT_btn" class="submit" >Ajouter</button>
+        <!-- <div class="ajt_anl">
+          <button id="AJT_btn" class="submit" >Ajouter</button>
+
+          <button id="ANL_btn" class="submit" >Annuler</button>
+        </div> -->
+      </form>
+      
+      <form class="form_student_modifier_hidden">
+        <div class="info_student">
+          <label for="exampleInputEmail1"
+            >Matricule <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="191931027467"
+            name="matricule"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputEmail1"
+            >Nom <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            name="name_modifier"
+            placeholder="walid"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Prénom <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="chebbab" name="prenom_modifier" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Section <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="ISILB" name="section_modifier" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Groupe <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="2" name="groupe_modifier" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <button id="AJT_btn" class="submit" type="button">Modifier</button>
+        <!-- <div class="ajt_anl">
+         
+  
+          <button id="ANL_btn" class="submit" type="button">Annuler</button>
+        </div> -->
+      </form>
+
+      <form class="form_student_suprimer_hidden">
+        <div class="info_student">
+          <label for="exampleInputEmail1"
+            >Matricule <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="191931027467"
+            name="matricule"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputEmail1"
+            >Nom <span class="oblg">* </span><span>:</span></label
+          >
+          <input
+            id="Name_value"
+            type="text"
+            placeholder="walid"
+            name="name_suprimer"
+            required
+          />
+          <label class="wrong" for=""></label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Prénom <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="chebbab" name="prenom_suprimer" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Section <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="ISILB" name="section_suprimer" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <div class="info_student">
+          <label for="exampleInputPassword1"
+            >Groupe <span class="oblg">* </span> <span>:</span></label
+          >
+          <input id="mdp_value" type="text" placeholder="2" name="groupe_suprimer" required />
+          <label class="wrong" for="">1</label>
+        </div>
+        <button id="AJT_btn" class="submit" type="button">Suprimer</button>
+        <!-- <div class="ajt_anl">
+          
+    
+          <button id="ANL_btn" class="submit" type="button">Annuler</button>
+        </div> -->
+      </form>
+    </div>
+    </div>
+</div>
+
+    <script src="Sign-up.js"></script>
+  </body>
+</html>
+
+
